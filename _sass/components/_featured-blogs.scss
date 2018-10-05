@@ -1,0 +1,84 @@
+.featured-blogs {
+    background-color: transparent;
+    z-index: 1;
+    margin-top: 50px;
+   
+    .featured-blogs-box-wrapper {
+        z-index: -1;
+        a {
+            text-decoration: none;
+    }
+    }
+    .fetured-blog-content-wrapper {
+        padding: 20px 40px 31px 40px;
+        width: 575px;
+        z-index: -1;
+        background-color: $white;
+        h6 {
+            @extend %terms;
+             color: $white;
+             display:inline-block;
+        }
+        h3 {
+            @extend %h3-left-dark;
+            line-height: 30px;
+            padding-bottom: 11px;
+            letter-spacing: -0.7px;
+            color: $dark-grey-blue;
+        }
+        p {
+            @extend %paragraphs;
+            line-height: 1.5;
+            letter-spacing: normal;
+            padding-bottom: 26px;
+        }
+        .banner-learn-more {
+            @extend %btn-all;
+            background-color: $dark-sky-blue;
+            color: $white;
+            border: none;
+            padding: 13px 16px;
+            &:focus,
+            &:hover {
+                background-color: $black;
+                color: $white;
+                text-decoration: none !important;
+            }
+            a {
+                color: $white;
+                text-decoration: none !important;
+            }
+        }
+    }
+    .fetured-blog-content-samll-wrapper {
+        padding: 40px 50px 43px 40px;
+        width: 405px;
+        background-image: url("../../assets/images/patten2.png");
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-color: $white;
+        h4 {
+            @extend %h4-left-dark;
+            padding-bottom: 8px;
+        }
+        p {
+            @extend %body-small;
+            line-height: 1.6;
+            letter-spacing: normal;
+            padding-bottom: 20px;
+        }
+        a {
+            color: $dark-sky-blue;
+            border: none;
+            img {
+                margin-left: 10px !important;
+            }
+            &:focus,
+            &:hover {
+                background-color: $black;
+                color: $dark-sky-blue;
+                text-decoration: none !important;
+            }
+        }
+    }
+}
