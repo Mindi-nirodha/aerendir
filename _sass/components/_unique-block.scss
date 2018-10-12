@@ -45,11 +45,48 @@
   .img-three {
     padding-top: 30px;
   }
+
+  //  solution industry box style AI on chip
+  .ai-on-chip-wrapper {
+    padding-top: 65px;
+      .img-ai-chip {
+        width:60px;
+        height:60px;
+        display: inline-block;
+        background-repeat:no-repeat;
+        vertical-align:top;
+      }
+      h3{
+        display:inline-block;
+        padding-left:31px;
+        padding-top:10px;
+      }
+  }
+
 }
+.industry-unique-section{
+  background-image:none;
+  padding-top: 34px;
+  padding-bottom: 69px;
+
+  p{
+    padding-top:19px;
+    padding-bottom:44px;
+  }
+  .unique-box-wrapper{
+    p{
+      font-size:20px;
+      font-weight:$normal;
+      color:$dark-grey-blue;
+    }
+  }
+  .banner-learn-more{
+    line-height: 25px;
+    padding: 11px 23px 16px 23px;
+  }
 
 
-
-
+}
 
 /*Ipad Portrait*/
 @media (min-width: 768px) and (max-width: 991px) {
@@ -59,11 +96,11 @@
       margin-top: 0px;
 
       h3 {
-        font-size: 34px;
+        font-size: 30px;
       }
       p {
         font-size: 14px;
-        padding-bottom: 0;
+        padding-bottom: 22px;
       }
       .img-unique {
         width: 82%;
@@ -77,9 +114,9 @@
       .content-wrapper {
         padding-left: 15px !important;
         display: block;
-        height: 224px;
-        min-height: 224px;
-        padding-top: 5px;
+        height: 217px;
+        min-height: 217px;
+        padding-top: 46px;
 
       }
 
@@ -91,6 +128,27 @@
         padding-bottom: 20px;
       }
     }
+  }
+  .industry-unique-section{
+
+    .content-wrapper{
+      text-align: center;
+    }
+    .ai-on-chip-wrapper{
+      padding-top:20px;
+
+      .img-ai-chip{
+        vertical-align: middle;
+      }
+      h3{
+        padding-left:15px;
+      }
+      p{
+        margin-bottom:10px !important;
+      }
+
+    }
+
   }
 }
 
@@ -119,9 +177,9 @@
       .content-wrapper {
         padding-left: 15px !important;
         display: block;
-        height: 342px;
-        min-height: 320px;
-        padding-top:0;
+        height: 263px;
+        min-height: 263px;
+        padding-top: 45px;
 
       }
 
@@ -133,8 +191,28 @@
 
       }
     }
-    .img-three{
-      padding-top:0;
+    .img-three {
+      padding-top: 0;
     }
+  }
+  .industry-unique-section{
+    .content-wrapper{
+      text-align: center;
+    }
+    .ai-on-chip-wrapper{
+      padding-top:20px;
+
+      .img-ai-chip{
+        vertical-align: middle;
+      }
+      h3{
+        padding-left:15px;
+      }
+      p{
+        margin-bottom:10px !important;
+      }
+
+    }
+
   }
 }

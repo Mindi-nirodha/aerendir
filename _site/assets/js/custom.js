@@ -99,7 +99,7 @@ $(document).ready(function () {
 
 
     if ($(window).width() > 767) {
-        makeContainersEqualHeight('.noval-solutions .background-wrapper-soln .box-wrapper-novel-solutions');
+      //  makeContainersEqualHeight('.noval-solutions .background-wrapper-soln .box-wrapper-novel-solutions');
 
 
     }
@@ -134,7 +134,6 @@ $(document).ready(function () {
             }
 
 
-
         }
     });
 
@@ -151,10 +150,10 @@ $(document).ready(function () {
         var body = '';
         var subject = 'Learn More';
         body += 'Hi' + '%0D%0A';
-        body += 'I would like to learn more about Aerendir.' + '%0D%0A'  + '%0D%0A';
-        body += 'Name: ' + fname + '%0D%0A'  + '%0D%0A';
-        body += 'Company: ' + lname + '%0D%0A'  + '%0D%0A';
-        body += 'Email: ' + email + '%0D%0A'  + '%0D%0A';
+        body += 'I would like to learn more about Aerendir.' + '%0D%0A' + '%0D%0A';
+        body += 'Name: ' + fname + '%0D%0A' + '%0D%0A';
+        body += 'Company: ' + lname + '%0D%0A' + '%0D%0A';
+        body += 'Email: ' + email + '%0D%0A' + '%0D%0A';
         body += 'Thank You. ';
         var url = "";
         if (mail_client == 'gmail') {
@@ -182,24 +181,74 @@ $(document).ready(function () {
             }, 1000);
     });
 
-    $('.logo-slider-outer-wrapper1').slick({
+    $('.service-industry-slider-outer-wrapper1').slick({
         arrows: true,
         dots: true,
         autoplay: true,
         autoplaySpeed: 1500,
         infinite: true,
         fade: true,
-        slidesToShow: 3,
+        slidesToShow: 5,
         slidesToScroll: 3
     });
 
     $('.logo-slider-outer-wrapper').slick({
         dots: false,
+        arrows:false,
         infinite: true,
         speed: 300,
         slidesToShow: 7,
         autoplay: true,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+
+
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1
+                }
+
+            }
+        ]
+    });
+
+    $('.service-industry-slider-outer-wrapper').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        autoplay: false,
+        arrows: true,
+        slidesToScroll: 1,
+        responsive: [{
+            breakpoint: 1200,
+            settings: {
+                slidesToShow:3,
+                slidesToScroll: 1,
+                dots: true,
+                arrows: false
+            }
+        },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: true,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: true,
+                    arrows: false
+                }
+            }
+        ]
     });
 
 });

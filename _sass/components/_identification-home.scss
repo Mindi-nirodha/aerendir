@@ -3,6 +3,7 @@
   background-position: bottom -269px right;
   background-repeat: no-repeat;
   position:relative;
+  padding-bottom: 57px;
   .identification-home-wrapper {
 
     .identification-home-image-wrapper {
@@ -16,13 +17,18 @@
     }
 
     .graph-content-wrapper-home {
+      padding-top:54px;
       h4 {
         @extend %h4-center;
-        padding-bottom: 15px;
+        padding-bottom: 17px;
       }
       p {
         @extend %paragraphs;
-        padding-bottom: 40px;
+        padding-bottom: 49px;
+        line-height: 24px;
+      }
+      .banner-learn-more{
+        padding: 13px 23px;
       }
     }
 
@@ -44,6 +50,8 @@
         padding-bottom: 15px;
         display:inline;
         padding-left:10px;
+        vertical-align: text-bottom;
+        line-height: 34px;
       }
 
     }
@@ -53,7 +61,7 @@
       text-align: left;
       line-height: 1.6;
       width:205px;
-      padding-top:16px;
+      padding-top:11px;
 
     }
   }
@@ -63,13 +71,19 @@
     width: 400px;
     height: 828px;
     display: block;
-    top: -344px;
+    top: -221px;
     left: 0;
     position: absolute;
     background-repeat: no-repeat;
     background-image: url(../images/home/Mask.png);
     background-position: top left;
     z-index: -1;
+  }
+  h3{
+    @extend %h1-left-dark;
+    text-align: center;
+    padding-bottom: 64px;
+    letter-spacing: -2.02px;
   }
 
 }
@@ -85,21 +99,44 @@
       .identification-home-image-wrapper{
         width: 100%;
       }
+      .graph-content-wrapper-home {
+        p{
+          padding-bottom:26px;
+        }
+      }
+
+    }
+    &:before{
+      background-image:none;
+    }
+
+    .binary-library-wrapper {
+      p{
+        margin:0 auto;
+        text-align: center;
+      }
+      .img-identity-wrapper{
+        text-align: center;
+      }
     }
   }
 }
 //767 styling
 @media (max-width: 767px) {
   .identification-home {
+    padding-bottom:20px;
+    background-image: none;
     .identification-home-wrapper {
       .identification-home-image-wrapper{
         width: 90%;
+        margin:0 auto;
+        margin-bottom: 20px;
       }
     }
 
     .binary-library-wrapper {
       p{
-        width: 89%;
+        width: 100%;
         text-align: center
       }
 
@@ -111,10 +148,22 @@
          text-align: center;
        }
      }
+    .identification-right-content-wrapper{
+      text-align: center;
+    }
+    &:before{
+      background-image:none;
+    }
+    h3{
+      padding-top:10px;
+      font-size:33px;
+    }
 
   }
+  .home-page{
+    overflow-x: hidden;
+  }
+
+
 }
 
-@media (min-width: 1499px) {
-
-}

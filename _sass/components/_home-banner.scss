@@ -4,10 +4,10 @@
   background-position: center bottom;
   background-size: cover;
   width: 100%;
-  min-height: 451px;
+  min-height: 778px;
   align-content: center;
   align-items: center;
-  padding-top: 71px;
+  padding-top: 286px;
 
   h2 {
     @extend %h2-banner-heading-text;
@@ -20,14 +20,14 @@
     @extend %h3-banner-heading-text;
     margin-top: 12px;
     margin-bottom: 17px;
-    line-height: 31px;
+    line-height: 49px;
     padding-left: 10px;
-    letter-spacing: -2.75px;
+    letter-spacing: -1.7px;
   }
   .button-wrapper {
     text-align: center;
     margin: 0 auto;
-    padding-top: 53px;
+    padding-top: 45px;
 
     .banner-learn-more {
       color: $dark-sky-blue;
@@ -43,6 +43,17 @@
   }
 
 }
+.resources-banner{
+  margin-top: 100px;
+  h2{
+    padding-top:21px;
+    letter-spacing:-1.7px;
+  }
+}
+.solution-banner{
+  min-height: 563px;
+  padding-top:193px;
+}
 
 .btn {
   margin-left: 64px;
@@ -54,7 +65,7 @@
 @media (min-width: 768px) and (max-width: 991px) {
   .home-banner {
     display: block;
-    padding: 20px 30px;
+    padding: 160px 30px;
     min-height: 350px;
     overflow-x: hidden;
 
@@ -73,20 +84,41 @@
   .btn {
     margin-left: 4px;
   }
+  .solution-banner{
+    min-height:552px;
+    padding-top:122px;
+
+    h3{
+      font-size:21px;
+      line-height: 31px;
+      padding-top:10px;
+      padding-bottom:10px;
+    }
+    h2{
+      font-size: 30px;
+      padding-top: 88px;
+    }
+  }
 }
 
 //767 styling
 @media (max-width: 767px) {
   .home-banner {
     display: block;
-    padding: 20px 30px;
-    min-height: 500px;
+    padding: 120px 30px;
+    min-height: 571px;
+
+
 
     h2 {
-      font-size: 32px;
+    font-size:32px;
+      padding-top:71px;
     }
     h3 {
       font-size: 23px;
+      line-height: 39px;
+      padding-bottom:10px;
+      padding-top:10px;
     }
     .button-wrapper {
       padding-top: 23px;
@@ -96,5 +128,21 @@
   }
   .btn {
     margin-left: 4px;
+  }
+  .solution-banner{
+    min-height:552px;
+    padding-top:122px;
+
+    h3{
+      font-size:21px;
+      line-height: 31px;
+      padding-top:10px;
+    }
+    h2{
+      font-size: 30px;
+    }
+  }
+  .resources-banner{
+    min-height: 400px!important;
   }
 }

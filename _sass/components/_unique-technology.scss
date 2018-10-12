@@ -1,13 +1,10 @@
 .solution-unique-technology{
-    background-image: url(../images/uique-bg-soln.png);
-    height: 857px;
-    background-repeat: no-repeat;
-    background-position: top 213px left;
-
+    min-height: 836px;;
+    position:relative;
   h3{
     @extend %h1-left-dark;
     text-align: center;
-    padding-top: 56px;
+    padding-top: 24px;
     letter-spacing: -2.02px;
   }
 
@@ -17,7 +14,7 @@
     min-height: 762px;
     margin:0 auto;
     background-image: url(../images/unique-tech-bg-image.png);
-    background-position: center -45px;
+    background-position: center -35px;
 
 
     .one-content-wrapper{
@@ -39,11 +36,12 @@
         h4{
           @extend %h3-left-dark;
           color:$dark-grey-blue;
+          padding-top:22px;
         }
         p{
           @extend %body-small;
           line-height: 26px;
-          padding-top: 3px;
+          padding-top: 10px;
         }
       }
       &:nth-of-type(1) {
@@ -67,7 +65,7 @@
           left: -110px !important;
         }
         .icon-unique-tech{
-          top: -7px;
+          top: 5px;
           left: -104px;
         }
 //
@@ -77,13 +75,13 @@
 //        }
       }
       &:nth-of-type(3) {
-        left: -99px;
+        left: -55px;
         top: 165px;
         text-align: right;
 
         .icon-unique-tech{
-        top: -6px;
-        right: -132px;
+        top: 3px;
+        right: -90px;
        }
       }
       &:nth-of-type(4) {
@@ -92,7 +90,7 @@
         text-align: right;
 
         .icon-unique-tech{
-        top:-4px;
+        top:8px;
         right: -98px;
       }
       }
@@ -172,10 +170,47 @@
       }
     }
   }
+  &:before{
+    background-image: url(../images/uique-bg-soln.png);
+    content: "";
+    background-repeat: no-repeat;
+    background-position: top 213px left;
+    position:absolute;
+  }
+}
+.solution-landing-unique{
+  h3{
+    padding-top: 63px;
+  }
+}
+.totally-unique-solution-landing{
+  padding-bottom:19px;
+  .left{
+    .content-wrapper{
+      padding-top: 52px;
+      padding-bottom:45px;
+    }
+  }
+  .right{
+    .content-wrapper{
+      padding-bottom: 131px;
+      padding-left: 96px;
+    }
+  }
+
+  .unique-box-wrapper{
+    h3{
+      padding-bottom: 15px;
+    }
+    p{
+      line-height:24px;
+    }
+  }
 }
 .solution-unique-tech-home{
   background-image:none;
 }
+
 
 
 /*Ipad Portrait*/

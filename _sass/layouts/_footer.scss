@@ -3,7 +3,7 @@ footer {
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: 100% auto;
-  padding: 314px 0 0px;
+  padding: 247px 0 0px;
   padding-bottom: 0px;
 
   p {
@@ -16,6 +16,7 @@ footer {
     display: inline-block;
     margin: 0;
     padding: 0;
+    padding-bottom:16px;
     ul {
       display: inline-block;
       padding-top: 0px;
@@ -46,17 +47,17 @@ footer {
     background-size: 100% auto;
     height: 288px;
     margin-top: 31px;
-    margin-left: -8px;
+    margin-left: 1px;
 
     h3 {
       @extend %h1-left-dark;
       padding-top: 37px;
       text-align: center;
-      margin-bottom: 13px;
+      padding-bottom: 13px;
     }
     p {
       text-align: center;
-      padding-bottom: 20px;
+      padding-bottom: 29px;
       line-height: 18px;
       letter-spacing: -0.02px;
       padding-left: 10px;
@@ -80,11 +81,11 @@ footer {
     p {
       padding-top: 7px;
       line-height: 23px;
-      padding-bottom: 29px;
+      padding-bottom: 40px;
     }
   }
   .footer-top-one {
-    padding-left: 14px !important;
+    padding-left: 21px !important;
   }
 
 .radio-wrapper{
@@ -216,6 +217,7 @@ footer {
       p {
         padding-bottom: 9px;
         padding-top: 7px;
+        font-size: 10px;
       }
     }
     .footer-top-one {
@@ -322,5 +324,6 @@ footer {
 @media (min-width: 1499px) {
   footer{
     background-position: top center;
+    padding: 410px 0 0px;
   }
 }

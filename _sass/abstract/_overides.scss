@@ -234,14 +234,22 @@ iframe {
   margin: 0;
 }
 
-/* Center Column */
-
-.center-block-col {
-  float: none !important;
-  margin: 0 auto !important;
-}
-
 .padding-null {
-  padding-left: 0px !important;
-  padding-right: 0px !important;
+  @media (max-width: 767px) {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  }
+.col-add-padding{
+  padding-left:20px !important;
+}
+.container-pdding{
+  padding-left:0!important;
+  padding-right: 0 !important;
+}
+.col-padding-null{
+  padding-left:0!important;
+}
+.col-padding-right-null{
+  padding-right:0!important;
 }

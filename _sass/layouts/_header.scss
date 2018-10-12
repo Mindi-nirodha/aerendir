@@ -2,11 +2,17 @@
 Screen style's
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+nav {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  background-color: $white;
+}
+
 .menu-container {
-  padding-bottom: 10px;
+  padding-bottom: 17px;
   padding-top: 25px;
   float: right;
   display: inline-block;
+  padding-right: 1%;
 }
 
 .menu-mobile {
@@ -63,13 +69,17 @@ Screen style's
       padding: 0;
       margin: 0;
       margin-top: 21px;
+      letter-spacing: -0.02px;
       a {
         @extend %navigation-text;
         text-decoration: none;
-        padding: 6px 13.5px;
+        padding: 6px 11.5px;
         display: block;
-        padding-left: 15.5px;
+        padding-left: 14.5px;
         padding-top: 9px;
+        padding-right: 12px;
+        letter-spacing: -0.02px;
+        line-height: 20px
       }
       &:hover {
         color: $dark-sky-blue;
@@ -77,8 +87,8 @@ Screen style's
       > ul {
         display: none;
         width: 100%;
-        background:$white;
-//        padding: 20px;
+        background: $white;
+        //        padding: 20px;
         position: absolute;
         z-index: 99;
         left: 0;
@@ -140,17 +150,17 @@ Screen style's
         &.normal-sub {
           width: 300px;
           left: auto;
-//          padding: 10px 20px;
+          //          padding: 10px 20px;
           > li {
             width: 100%;
             a {
               border: 0;
               padding: 20px;
             }
-            &:hover{
-              background-color:$green-blue;
-              a{
-                color:$white;
+            &:hover {
+              background-color: $green-blue;
+              a {
+                color: $white;
               }
             }
           }
@@ -159,18 +169,20 @@ Screen style's
     }
     .banner-learn-more {
       color: $white;
-      padding: 8px 29px 8px 39px;
-      margin-left: 10px;
-      letter-spacing: -0.02px;
+      padding: 8px 66px 8px 62px;
+      margin-left: 0px;
+      letter-spacing: -1.02px;
     }
   }
 }
 
 .navbar-brand {
   float: left !important;
-  padding: 11px 0px !important;
+  padding: 9px 0px !important;
   height: auto !important;
-
+  img {
+    padding: 0 42px;
+  }
 }
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -228,32 +240,69 @@ Mobile style's
     }
   }
 }
+
 //767 styling
 @media (max-width: 767px) {
-  .menu-mobile{
+  .menu-mobile {
     margin-top: -101px;
   }
 
   .menu {
     > ul {
-      .banner-learn-more{
+      .banner-learn-more {
         width: 56%;
       }
     }
   }
-
+  .menu-container {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top:24px;
+  }
 }
+
 /*Ipad Portrait*/
 @media (min-width: 768px) and (max-width: 991px) {
-  .menu-mobile{
+  .menu-mobile {
     margin-top: -101px;
   }
 
   .menu {
-    > ul{
-      .banner-learn-more{
+    > ul {
+      .banner-learn-more {
         width: 23%;
+
+        li {
+          a {
+            padding: 6px 7.5px;
+            font-size: 11px;
+          }
+        }
       }
     }
+  }
+  .menu-container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
+
+@media (min-width: 1499px) {
+  .menu-container {
+    padding-right: 1%;
+  }
+}
+
+/*ipad landscape */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .menu {
+    > ul {
+      > li {
+        a {
+          font-size:10px;
+          padding-left: 10.5px;
+        }
+      }
+    }
+  }
 }

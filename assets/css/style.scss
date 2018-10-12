@@ -14,6 +14,7 @@
 @import 'abstract/general';
 @import 'abstract/overides';
 @import 'abstract/typography';
+@import 'abstract/slick-custom';
 
 
 @import 'layouts/header';
@@ -24,6 +25,15 @@
 
 
 
+
+
+
+@import 'components/blog-pagination';
+
+@import 'components/testimonial-industry';
+@import 'components/key-features-industry';
+@import 'components/services-solution-industry';
+@import 'components/tab-navigation';
 @import 'components/home-banner';
 @import 'components/unique-block';
 @import 'components/forms';
@@ -33,3 +43,13 @@
 @import 'components/biometric-box-wrapper';
 @import 'components/identification-home';
 @import 'components/logo-slider-home';
+@import 'components/featured-blogs';
+@import 'components/blogs';
+@import 'components/blog-banner';
+@import 'components/blog-inner';
+@import 'components/blog-pagination';
+@import 'components/blog-banner';
+@import 'components/testimonial-industry';
+@import 'components/key-features-industry';
+@import 'components/services-solution-industry';
+@import 'components/tab-navigation';
